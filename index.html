@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Library</title>
+    <link rel="stylesheet" href="styles/library.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>JavaScript Library-oo</h1>
+        <hr>
+    </header>
+    <div class="operationBar">
+        <button class="addOne">Add a book</button>
+        <button class="deleteStuff">Delete</button>
+        <div class="addForm">
+            <div class="addFormContent">
+                <span class="close">&times;</span>
+                <div>Add a Book!</div><br>
+                <form class="bookForm">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="Title"><br><br>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="Author"><br><br>
+                    <label for="Pages">Pages</label>
+                    <input type="number" id="pages" name="Pages"><br><br>
+                    <label for="Read">Read?</label>
+                    <input type="checkbox" id="read" name="Read"><br><br>
+                    <input type="submit" value="Submit" class="submit">
+                </form> 
+            </div>
+        </div>
+    </div>
+    <div class="bookShelf">
+    </div>
+    <script src="js/libraryscript.js" defer></script>
+</body>
+</html>

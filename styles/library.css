@@ -1,0 +1,226 @@
+body {
+    color: white;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #3C3B3F, #605C3C);
+}
+
+header {
+    text-align: center;
+    font-family: 'Sofia', cursive;
+}
+
+header h1:hover {
+    animation-duration: 0.8s;
+    animation-name: hvr-wobble-vertical;
+}
+
+@-webkit-keyframes hvr-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes hvr-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  .hvr-wobble-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+    -webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+.operationBar {
+    text-align: center;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.operationBar button {
+    font-size: 1.2rem;
+    padding: 1em;
+    color: white;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: all .1s ease-in-out;
+}
+
+.operationBar button:hover {
+    border: 1px solid black;
+}
+
+.operationBar button:active {
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.1); 
+}
+
+.addOne {
+    margin-right: 5em;
+}
+
+.addOne:hover {
+    background-color: seagreen;
+    color: white;
+}
+
+.deleteStuff {
+    margin-left: 5em;
+}
+
+.deleteStuff:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.addForm {
+  display: none;
+  position: fixed;
+  padding-top: 2%;
+  z-index: 1;
+  left: 32.5%;
+  top: 26%;
+  width: 35%;
+  height: 42.5%;
+  overflow: hidden;
+  background-color: white;
+  opacity: 0.8;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.addFormContent {
+  padding: 20px;
+
+  width: 50%;
+  position: relative;
+  background-color: white;
+  opacity: 0.9;
+  color: black;
+  margin: auto;
+  width: 80%;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+.singleBook {
+  display: inline-block;
+  border: 1px solid black;
+  margin: 1%;
+  height: 12em;
+  width: 8em;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.singleBook:hover {
+  scale: 1.1;
+  transition: 0.2s;
+}
+
+.singleBookClose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.singleBookClose:hover,
+.singleBookClose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bookLabel {
+  font-size: 0.55em;
+  margin-bottom: 2%;
+  text-decoration: underline;
+}
+
+.bookDesc {
+  font-size: 0.75em;
+}
+
+.bookSeparators {
+  margin: 10%;
+}
+
+.readLabel {
+  margin-top: 15%;
+  font-size: 0.5em;
+  font-weight: bold;
+  text-align: center;
+}
